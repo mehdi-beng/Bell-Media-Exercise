@@ -4,6 +4,7 @@ var app = angular
 
 config.$inject = ['$routeProvider', '$locationProvider'];
 
+// Configure the application's page routing
 function config($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
