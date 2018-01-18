@@ -1,0 +1,150 @@
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  padding-top: 100px;
+  padding-bottom: 156px;
+}
+.panel{
+  padding: 20px;
+  padding-top: 50px;
+}
+.injured {
+      background-color: #dcff0c30 !important;
+}
+.player_image{
+  padding-top: 50px;
+ display: block;
+    margin: 0 auto;
+}
+.alignement h1 {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.alignement .search-box-label {
+  color:#041e41; 
+  padding-bottom: 10px !important;
+}
+.winnipeg{
+  background-color: #041e41 !important;
+  color: white !important;
+}
+.alignement-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.alignement-list .joueur{
+  background-color: #f2f2f2;
+  box-shadow: 0 1px 0 0 #e5e5e5, 0 1px 0 0 #e5e5e5 inset;
+  position: relative;
+}
+
+.alignement-list .joueur .joueur-container{
+  padding: 16px 0;
+  width: 100%;
+    max-width: 1464px;
+    margin: 0 auto;
+    
+}
+
+.alignement-list .joueur .joueur-container .profil{
+  padding: 16px 0;
+  align-items: center;
+  -webkit-align-items: center; 
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.custom-col{
+ padding-left: 12px;
+padding-right: 12px;
+}
+
+.alignement-list .joueur .joueur-container img{
+ width: 80px;
+}
+.alignement-list .joueur .profil .info-rapide{
+  font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.alignement-list .joueur .profil .info-statut{
+  font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: red !important;
+}
+.alignement-list .joueur .profil .info-joueur{
+      margin: 9px 0;
+  font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.alignement-list .joueur .profil .info-joueur .maillot{
+      vertical-align: middle;
+    background-color: #041e41; /* Winnipeg jets blue color*/
+    color: white;
+    font-weight: bold;
+    padding: 0 8px;
+    font-style: italic;
+}
+
+.alignement-list .joueur .profil .info-joueur p{
+      display: inline;
+      margin-left: 5px;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.text-bold {
+      font-weight: bold !important;
+}
+
+.search-box{
+  padding-top: 30px;
+  padding-bottom: 20px;
+        margin:0;
+        margin-top: 10px;
+       
+    }
+ 
+.search-box .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    .search-box button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+

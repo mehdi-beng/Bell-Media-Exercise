@@ -1,0 +1,78 @@
+<header class="winnipeg text-white">
+   <div class="container text-center">
+      <img src="{{team_img_urls[6].url}}">
+      <h1>Winnipeg Jets</h1>
+      <p class="lead">Profil de {{selected_player.first_name}} {{selected_player.last_name}}</p>
+   </div>
+</header>
+<section id="alignement">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 mx-auto alignement">
+            <div class="row">
+               <div class="col player_image">
+                  <img src="{{selected_player.image['2'].url}}" >
+               </div>
+               <div class="panel col">
+                  <div class="panel-heading ng-scope">
+                     <h2 class="p-t-1 panel-title ng-binding">Aperçu du profil</h2>
+                  </div>
+                  <div class="row">
+                     <dl class="col-sm-6">
+                        <dt class="ng-binding">Prénom</dt>
+                        <dd class="ng-binding ">{{selected_player.first_name}}</dd>
+                     </dl>
+                     <dl class="col-sm-6">
+                        <dt class="ng-binding">Nom de famille</dt>
+                        <dd class="ng-binding ">{{selected_player.last_name}}</dd>
+                     </dl>
+                     <dl class="col-sm-6">
+                        <dt class="ng-binding">Position</dt>
+                        <!-- Traduction anglais -> Francais -->
+                        <dd class="ng-binding">{{selected_player.position}}</dd>
+                     </dl>
+                     <dl class="col-sm-6">
+                        <dt class="ng-binding">Numéro</dt>
+                        <!-- Traduction anglais -> Francais -->
+                        <dd class="ng-binding">{{selected_player.uniform_number}}</dd>
+                     </dl>
+                     <dl class="col-sm-6">
+                        <dt class="ng-binding">Date de naissance</dt>
+                        <dd class="ng-binding ">{{selected_player.birth_date}}</dd>
+                     </dl>
+                     <dl class="col-sm-6">
+                        <dt class="ng-binding">Statut</dt>
+                        <!-- Traduction anglais -> Francais -->
+                        <dd class="ng-binding" ng-if="selected_player.phase_type == 'professional' ">Professionnel</dd>
+                     </dl>
+                  </div>
+                  <div class="row">
+                     <dl class="col-sm-6">
+                        <dt class="ng-binding">Taille</dt>
+                        <!-- Traduction anglais -> Francais -->
+                        <dd class="ng-binding">{{selected_player.height}}</dd>
+                     </dl>
+                     <dl class="col-sm-6">
+                        <dt class="ng-binding">Poids</dt>
+                        <dd class="ng-binding ">{{selected_player.weight}}</dd>
+                     </dl>
+                     <dl class="col-sm-6">
+                        <dt class="ng-binding">Condition actuelle</dt>
+                        <dd class="ng-binding" ng-if="selected_player.phase_status == 'active' ">Actif</dd>
+                        <dd class="ng-binding" style="color:red;" ng-if="selected_player.phase_status == 'professional' ">Blessé</dd>
+                     </dl>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+</section>
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+   <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Bell Media Exercise</p>
+   </div>
+   <!-- /.container -->
+</footer>
