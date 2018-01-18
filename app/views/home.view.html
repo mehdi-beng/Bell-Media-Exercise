@@ -9,6 +9,7 @@
    <div class="container">
       <div class="row">
          <div class="col-lg-12 mx-auto alignement">
+            <!-- Search for players by name -->
             <h1 class="search-box-label">Rechercher</h1>
             <div class="search-box">
                <div class="input-group col-md-12">
@@ -20,6 +21,7 @@
             </div>
             <h1>Gardiens</h1>
             <ul class="alignement-list">
+               <!-- Start ng-repeat : List of goalkeepers -->
                <li ng-repeat="joueur in alignement | filter: { position: 'Gardien' } | filter:searchFilter" class="joueur isInjured(joueur)" ng-class="{'injured': joueur.phase_status == 'injured'}" data-player-id="{{joueur.id}}">
                   <div class="joueur-container flex-wrap d-flex align-self-center">
                      <div class="profil d-flex  align-self-center col-7">
@@ -54,9 +56,11 @@
                      </div>
                   </div>
                </li>
+               <!-- end of ng-repeat -->
             </ul>
             <h1>Défenseurs</h1>
             <ul class="alignement-list">
+               <!-- Start ng-repeat : List of defenders -->
                <li ng-repeat="joueur in alignement | filter: { position: 'Défenseur' } | filter:searchFilter" class="joueur" ng-class="{'injured': joueur.phase_status == 'injured'}" data-player-id="{{joueur.id}}">
                   <div class="joueur-container flex-wrap d-flex align-self-center">
                      <div class="profil d-flex  align-self-center col-7">
@@ -91,9 +95,11 @@
                      </div>
                   </div>
                </li>
+               <!-- end of ng-repeat -->
             </ul>
             <h1>Ailiers Gauche</h1>
             <ul class="alignement-list">
+               <!-- Start ng-repeat : List of left wingers -->
                <li ng-repeat="joueur in alignement | filter: { position: 'Ailier Gauche' } | filter:searchFilter" class="joueur" ng-class="{'injured': joueur.phase_status == 'injured'}" data-player-id="{{joueur.id}}">
                   <div class="joueur-container flex-wrap d-flex align-self-center">
                      <div class="profil d-flex  align-self-center col-7">
@@ -128,9 +134,11 @@
                      </div>
                   </div>
                </li>
+               <!-- end of ng-repeat -->
             </ul>
             <h1>Ailiers Droit</h1>
             <ul class="alignement-list">
+               <!-- Start ng-repeat : List of right wingers -->
                <li ng-repeat="joueur in alignement | filter: { position: 'Ailier Droit' } | filter:searchFilter" class="joueur" ng-class="{'injured': joueur.phase_status == 'injured'}" data-player-id="{{joueur.id}}">
                   <div class="joueur-container flex-wrap d-flex align-self-center">
                      <div class="profil d-flex  align-self-center col-7">
@@ -165,9 +173,11 @@
                      </div>
                   </div>
                </li>
+               <!-- end of ng-repeat -->
             </ul>
             <h1>Centraux</h1>
             <ul class="alignement-list">
+               <!-- Start ng-repeat : List of central players -->
                <li ng-repeat="joueur in alignement | filter: { position: 'Centre' } | filter:searchFilter" class="joueur"  ng-class="{'injured': joueur.phase_status == 'injured'}" data-player-id="{{joueur.id}}">
                   <div class="joueur-container flex-wrap d-flex align-self-center">
                      <div class="profil d-flex  align-self-center col-7">
@@ -202,6 +212,7 @@
                      </div>
                   </div>
                </li>
+               <!-- end of ng-repeat -->
             </ul>
          </div>
       </div>
